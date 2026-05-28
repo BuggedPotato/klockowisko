@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import repository.ToyRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ToyService {
@@ -16,6 +17,10 @@ public class ToyService {
 
     public List<Toy> getAllToys(){
         return this.toyRepo.findAll();
+    }
+
+    public Optional<Toy> getToyById(Long id){
+        return this.toyRepo.findById(id);
     }
 
     public List<Toy> getAllToysForUser(Long userId){

@@ -14,7 +14,7 @@ public class ToyMapper {
         return toy;
     }
 
-    public static ToyResponse toyResponse(Toy toy){
+    public static ToyResponse toResponse(Toy toy){
         ToyResponse res = new ToyResponse();
         res.setId(toy.getId());
         res.setName(toy.getName());
