@@ -57,7 +57,26 @@ public class Toy {
         return manufacturer;
     }
 
+    public User getOwner() {
+        return owner;
+    }
+
+    public void setOwner(User owner) {
+        this.owner = owner;
+    }
+
     public void setManufacturer(Manufacturer manufacturer) {
         this.manufacturer = manufacturer;
+    }
+
+    @Override
+    public String toString() {
+        return "{ 'id': " + this.id +
+                "'name':" + this.name +
+                "'manufacturer':" + this.manufacturer.getName() +
+                "'price':" + this.price +
+                "'purchaseDate':" + this.purchaseDate.toString() +
+                "'owner':" + this.owner.getUsername() +
+                " }";
     }
 }
