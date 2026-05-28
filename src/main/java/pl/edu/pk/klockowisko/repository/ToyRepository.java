@@ -1,6 +1,6 @@
-package repository;
+package pl.edu.pk.klockowisko.repository;
 
-import entity.Toy;
+import pl.edu.pk.klockowisko.entity.Toy;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

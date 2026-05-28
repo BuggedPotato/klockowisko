@@ -1,17 +1,17 @@
-package controller;
+package pl.edu.pk.klockowisko.controller;
 
 
-import dto.ToyResponse;
-import entity.Toy;
+import pl.edu.pk.klockowisko.dto.ToyResponse;
+import pl.edu.pk.klockowisko.entity.Toy;
 import jakarta.validation.Valid;
-import mapper.ToyMapper;
+import pl.edu.pk.klockowisko.mapper.ToyMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-import service.ToyService;
+import pl.edu.pk.klockowisko.service.ToyService;
 
 import java.util.List;
 import java.util.Optional;

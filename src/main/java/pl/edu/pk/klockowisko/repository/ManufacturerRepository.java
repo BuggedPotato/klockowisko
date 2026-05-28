@@ -1,6 +1,6 @@
-package repository;
+package pl.edu.pk.klockowisko.repository;
 
-import entity.Manufacturer;
+import pl.edu.pk.klockowisko.entity.Manufacturer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

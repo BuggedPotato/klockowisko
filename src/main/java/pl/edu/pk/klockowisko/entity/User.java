@@ -1,4 +1,4 @@
-package entity;
+package pl.edu.pk.klockowisko.entity;
 
 import jakarta.persistence.*;
 
@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "\"user\"")
 public class User {
     @Id
     @GeneratedValue
@@ -16,7 +17,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "owner", fetch = FetchType.LAZY)
     private List<Toy> toys = new ArrayList<>();
 
     public Long getId() {

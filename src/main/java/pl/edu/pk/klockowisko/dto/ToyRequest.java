@@ -1,4 +1,4 @@
-package dto;
+package pl.edu.pk.klockowisko.dto;
 
 
 import jakarta.annotation.Nullable;

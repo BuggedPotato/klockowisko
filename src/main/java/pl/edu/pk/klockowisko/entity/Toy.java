@@ -1,4 +1,4 @@
-package entity;
+package pl.edu.pk.klockowisko.entity;
 
 import jakarta.persistence.*;
 

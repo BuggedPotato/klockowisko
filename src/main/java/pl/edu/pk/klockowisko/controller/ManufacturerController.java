@@ -1,16 +1,16 @@
-package controller;
+package pl.edu.pk.klockowisko.controller;
 
-import dto.ManufacturerResponse;
-import entity.Manufacturer;
+import pl.edu.pk.klockowisko.dto.ManufacturerResponse;
+import pl.edu.pk.klockowisko.entity.Manufacturer;
 import jakarta.validation.Valid;
-import mapper.ManufacturerMapper;
+import pl.edu.pk.klockowisko.mapper.ManufacturerMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-import service.ManufacturerService;
+import pl.edu.pk.klockowisko.service.ManufacturerService;
 
 import java.util.List;
 import java.util.Optional;

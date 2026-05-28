@@ -1,4 +1,4 @@
-package dto;
+package pl.edu.pk.klockowisko.dto;
 
 public class ManufacturerResponse {
     private Long id;

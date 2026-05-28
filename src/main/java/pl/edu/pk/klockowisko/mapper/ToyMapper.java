@@ -1,8 +1,8 @@
-package mapper;
+package pl.edu.pk.klockowisko.mapper;
 
-import dto.ToyRequest;
-import dto.ToyResponse;
-import entity.Toy;
+import pl.edu.pk.klockowisko.dto.ToyRequest;
+import pl.edu.pk.klockowisko.dto.ToyResponse;
+import pl.edu.pk.klockowisko.entity.Toy;
 
 public class ToyMapper {
     public static Toy toEntity(ToyRequest req){

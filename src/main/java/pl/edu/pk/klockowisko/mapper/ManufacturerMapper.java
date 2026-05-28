@@ -1,8 +1,8 @@
-package mapper;
+package pl.edu.pk.klockowisko.mapper;
 
-import dto.ManufacturerRequest;
-import dto.ManufacturerResponse;
-import entity.Manufacturer;
+import pl.edu.pk.klockowisko.dto.ManufacturerRequest;
+import pl.edu.pk.klockowisko.dto.ManufacturerResponse;
+import pl.edu.pk.klockowisko.entity.Manufacturer;
 
 public class ManufacturerMapper {
     public static Manufacturer toEntity(ManufacturerRequest req){

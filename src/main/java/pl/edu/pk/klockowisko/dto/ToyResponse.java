@@ -1,7 +1,7 @@
-package dto;
+package pl.edu.pk.klockowisko.dto;
 
-import entity.Manufacturer;
-import entity.User;
+import pl.edu.pk.klockowisko.entity.Manufacturer;
+import pl.edu.pk.klockowisko.entity.User;
 
 import java.util.Date;
 

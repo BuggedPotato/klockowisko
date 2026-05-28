@@ -1,8 +1,8 @@
-package service;
+package pl.edu.pk.klockowisko.service;
 
-import entity.Toy;
+import pl.edu.pk.klockowisko.entity.Toy;
 import org.springframework.stereotype.Service;
-import repository.ToyRepository;
+import pl.edu.pk.klockowisko.repository.ToyRepository;
 
 import java.util.List;
 import java.util.Optional;
