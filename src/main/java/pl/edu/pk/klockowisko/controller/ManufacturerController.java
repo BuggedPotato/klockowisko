@@ -12,6 +12,7 @@ import org.springframework.web.server.ResponseStatusException;
 import pl.edu.pk.klockowisko.service.ManufacturerService;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -43,5 +44,11 @@ public class ManufacturerController {
                         ManufacturerMapper.toEntity(req)
                 )
         );
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Object> deleteById(@PathVariable Long id){
+        this.service.deleteManufacturerById(id);
+        return ResponseEntity.ok(Map.of("message", "Success", "status", 200));
     }
 }

@@ -7,6 +7,7 @@ import pl.edu.pk.klockowisko.entity.Manufacturer;
 public class ManufacturerMapper {
     public static Manufacturer toEntity(ManufacturerRequest req){
         Manufacturer m = new Manufacturer();
+        m.setId(req.getId());
         m.setName(req.getName());
         return m;
     }

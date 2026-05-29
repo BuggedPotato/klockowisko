@@ -3,11 +3,11 @@
 **Ocena 3.0 (Dostateczny):**
  - [x] Działający Spring Boot
  - [x] Połączenie z bazą danych
- - [ ] CRUD dla 1 encji
+ - [x] CRUD dla 1 encji
  - [ ] Demo video pokazuje podstawowe działanie
 
 **Ocena 4.0 (Dobry):**
- - [ ] Wszystko z 3.0 +
+ - [x] Wszystko z 3.0 +
  - [x] Poprawna struktura warstwowa (Controller/Service/Repository)
  - [x] DTO + Walidacja danych
  - [x] Obsługa błędów

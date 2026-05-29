@@ -26,4 +26,8 @@ public class ManufacturerService {
     public Manufacturer createManufacturer(Manufacturer manufacturer){
         return this.manufacturerRepo.save(manufacturer);
     }
+
+    public void deleteManufacturerById(Long id){
+        this.manufacturerRepo.deleteById(id);
+    }
 }

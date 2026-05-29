@@ -1,6 +1,7 @@
 package pl.edu.pk.klockowisko.controller;
 
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pl.edu.pk.klockowisko.dto.ManufacturerRequest;
 import pl.edu.pk.klockowisko.dto.ManufacturerResponse;
@@ -15,6 +16,7 @@ import pl.edu.pk.klockowisko.service.ToyService;
 import tools.jackson.databind.annotation.JsonSerialize;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -52,5 +54,11 @@ public class ToyController {
                         req
                 )
         );
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Object> deleteById(@PathVariable Long id){
+        this.service.deleteToyById(id);
+        return ResponseEntity.ok(Map.of("message", "Success", "status", 200));
     }
 }

@@ -7,6 +7,7 @@ import pl.edu.pk.klockowisko.entity.Toy;
 public class ToyMapper {
     public static Toy toEntity(ToyRequest req){
         Toy toy = new Toy();
+        toy.setId(req.getId());
         toy.setName(req.getName());
         toy.setPrice(req.getPrice());
         toy.setPurchaseDate(req.getPurchaseDate());

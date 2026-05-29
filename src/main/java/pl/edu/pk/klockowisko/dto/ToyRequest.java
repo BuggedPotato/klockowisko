@@ -10,6 +10,8 @@ import jakarta.validation.constraints.Size;
 import java.util.Date;
 
 public class ToyRequest {
+    @Nullable
+    private Long id;
     @NotNull
     @Size(min = 3, max = 192, message = "Name must be between 3 and 192 characters long")
     private String name;
@@ -48,6 +50,11 @@ public class ToyRequest {
     @Nullable
     public Double getPrice() {
         return price;
+    }
+
+    @Nullable
+    public Long getId() {
+        return id;
     }
 
     @Override
