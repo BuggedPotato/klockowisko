@@ -1,15 +1,12 @@
 package pl.edu.pk.klockowisko.dto;
 
-import pl.edu.pk.klockowisko.entity.Manufacturer;
-import pl.edu.pk.klockowisko.entity.User;
-
 import java.util.Date;
 
 public class ToyResponse {
     private Long id;
     private String name;
-    private Manufacturer manufacturer;
-    private User owner;
+    private ManufacturerResponse manufacturer;
+    private UserResponse owner;
     private Date purchaseDate;
     private Double price;
 
@@ -21,11 +18,11 @@ public class ToyResponse {
         this.name = name;
     }
 
-    public void setManufacturer(Manufacturer manufacturer) {
+    public void setManufacturer(ManufacturerResponse manufacturer) {
         this.manufacturer = manufacturer;
     }
 
-    public void setOwner(User owner) {
+    public void setOwner(UserResponse owner) {
         this.owner = owner;
     }
 
@@ -35,5 +32,41 @@ public class ToyResponse {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public ManufacturerResponse getManufacturer() {
+        return manufacturer;
+    }
+
+    public UserResponse getOwner() {
+        return owner;
+    }
+
+    public Date getPurchaseDate() {
+        return purchaseDate;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        return "ToyResponse{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", manufacturer=" + (manufacturer == null ? "NULL" : manufacturer.getName()) +
+                ", owner=" + owner.getUsername() +
+                ", purchaseDate=" + purchaseDate +
+                ", price=" + price +
+                '}';
     }
 }

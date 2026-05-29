@@ -10,7 +10,6 @@ public class ToyMapper {
         toy.setName(req.getName());
         toy.setPrice(req.getPrice());
         toy.setPurchaseDate(req.getPurchaseDate());
-        System.out.println(toy);
         return toy;
     }
 
@@ -20,8 +19,8 @@ public class ToyMapper {
         res.setName(toy.getName());
         res.setPrice(toy.getPrice());
         res.setPurchaseDate(toy.getPurchaseDate());
-        res.setOwner(toy.getOwner());
-        res.setManufacturer(toy.getManufacturer());
+        res.setOwner(UserMapper.toResponse(toy.getOwner()));
+        res.setManufacturer(ManufacturerMapper.toResponse(toy.getManufacturer()));
         return res;
     }
 }

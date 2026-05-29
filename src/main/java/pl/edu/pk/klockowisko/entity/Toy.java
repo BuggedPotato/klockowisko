@@ -71,12 +71,13 @@ public class Toy {
 
     @Override
     public String toString() {
-        return "{ 'id': " + this.id +
-                "'name':" + this.name +
-                "'manufacturer':" + this.manufacturer.getName() +
-                "'price':" + this.price +
-                "'purchaseDate':" + this.purchaseDate.toString() +
-                "'owner':" + this.owner.getUsername() +
-                " }";
+        return "Toy{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", manufacturer=" + (manufacturer == null ? "NULL" : manufacturer.getName()) +
+                ", owner=" + owner.getUsername() +
+                ", purchaseDate=" + purchaseDate +
+                ", price=" + price +
+                '}';
     }
 }

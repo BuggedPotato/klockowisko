@@ -21,10 +21,10 @@ public class GlobalExceptionHandler {
                 ));
         Map<String, Object> response = Map.of(
                 "message", "Błąd walidacji",
-                "status", 400,
+                "status", 422,
                 "errors", errors
         );
-        return ResponseEntity.badRequest().body(response);
+        return ResponseEntity.unprocessableContent().body(response);
     }
 
     @ExceptionHandler(value = ResponseStatusException.class)

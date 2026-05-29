@@ -49,4 +49,15 @@ public class ToyRequest {
     public Double getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "ToyRequest{" +
+                "name='" + name + '\'' +
+                ", manufacturerId=" + manufacturerId +
+                ", ownerId=" + ownerId +
+                ", purchaseDate=" + purchaseDate +
+                ", price=" + price +
+                '}';
+    }
 }
